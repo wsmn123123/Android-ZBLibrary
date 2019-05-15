@@ -259,6 +259,20 @@
             <View style="@style/divider_horizontal_1px" />
 
             <LinearLayout
+                android:id="@+id/llDemoLocalWebActivity"
+                style="@style/content_item_white" >
+
+                <TextView
+                    style="@style/content_item_lf_tv"
+                    android:layout_weight="1"
+                    android:text="DemoLocalWebActivity" />
+
+                <ImageView style="@style/content_item_rt_img" />
+            </LinearLayout>
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <LinearLayout
                 android:id="@+id/llDemoMainDemoTabActivity"
                 style="@style/content_item_white" >
 

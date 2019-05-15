@@ -46,7 +46,8 @@
         android:label="@string/app_name"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme">
-        <activity android:name=".DEMO.DemoThreadPoolActivity"></activity>
+
+        <activity android:name=".DEMO.DemoThreadPoolActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -138,6 +139,10 @@
             android:name=".DEMO.DemoBroadcastReceiverActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".DEMO.LocalWeb"
+            android:screenOrientation="portrait"
+            android:theme="@style/Window"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity
             android:name=".DEMO.DemoBottomWindow"
             android:screenOrientation="portrait"

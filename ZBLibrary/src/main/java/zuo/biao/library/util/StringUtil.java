@@ -470,6 +470,7 @@ public class StringUtil {
 	public static final String HTTP = "http";
 	public static final String URL_PREFIX = "http://";
 	public static final String URL_PREFIXs = "https://";
+	public static final String URL_LOCAL = "file:///";
 	public static final String URL_STAFFIX = URL_PREFIX;
 	public static final String URL_STAFFIXs = URL_PREFIXs;
 	/**判断字符类型是否是网址
@@ -479,7 +480,7 @@ public class StringUtil {
 	public static boolean isUrl(String url) {
 		if (isEmpty(url, true)) {
 			return false;
-		} else if (! url.startsWith(URL_PREFIX) && ! url.startsWith(URL_PREFIXs)) {
+		} else if (! url.startsWith(URL_PREFIX) && ! url.startsWith(URL_PREFIXs) && ! url.startsWith(URL_LOCAL)) {
 			return false;
 		}
 

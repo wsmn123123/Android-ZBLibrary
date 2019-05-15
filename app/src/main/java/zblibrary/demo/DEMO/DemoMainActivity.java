@@ -238,6 +238,7 @@ public class DemoMainActivity extends BaseActivity implements OnClickListener, O
 		findView(R.id.llDemoMainSelectPictureActivity).setOnClickListener(this);
 		findView(R.id.llDemoMainCutPictureActivity).setOnClickListener(this);
 		findView(R.id.llDemoMainWebViewActivity).setOnClickListener(this);
+		findView(R.id.llDemoLocalWebActivity).setOnClickListener(this);
 		findView(R.id.llDemoMainEditTextInfoActivity).setOnClickListener(this);
 		findView(R.id.llDemoMainServerSettingActivity).setOnTouchListener(this);
 
@@ -432,7 +433,9 @@ public class DemoMainActivity extends BaseActivity implements OnClickListener, O
 		case R.id.llDemoMainTimePickerWindow:
 			toActivity(TimePickerWindow.createIntent(context, selectedTime), REQUEST_TO_TIME_PICKER, false);
 			break;
-
+			case R.id.llDemoLocalWebActivity:
+				toActivity(WebViewActivity.createIntent(context,"localWeb","file:///android_asset/index.html"));
+				break;
 		default:
 			break;
 		}
